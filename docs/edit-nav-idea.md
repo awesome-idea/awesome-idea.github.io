@@ -15,31 +15,31 @@
 
 ### 查看最近的地方
 
-![image.png](images/edit-nav-idea/e4460d358019a358d4ab5e26d985c93c.png)
+![image.png](/images/edit-nav-idea/e4460d358019a358d4ab5e26d985c93c.png)
 
 - command + shift + E
 
 ### 添加书签
 
-**Option + F3**<br />![image.png](images/edit-nav-idea/b1dcd3ae4a46cad509402ac687dd9e0b.png)
+**Option + F3**<br />![image.png](/images/edit-nav-idea/b1dcd3ae4a46cad509402ac687dd9e0b.png)
 
 ### 搜索书签
 
-Command + F3<br />![image.png](images/edit-nav-idea/c08437eaaf664dc8862175ca2f4d51b1.png)
+Command + F3<br />![image.png](/images/edit-nav-idea/c08437eaaf664dc8862175ca2f4d51b1.png)
 
 ### 查看最近 当前项目的变更
 
-**Option + Shift + C**<br />![image.png](images/edit-nav-idea/a6b9043a506ed86022a55c053fbb3796.png)
+**Option + Shift + C**<br />![image.png](/images/edit-nav-idea/a6b9043a506ed86022a55c053fbb3796.png)
 
 ### 使用弹出式选择栏导航 #效率
 
 > Option + F1
 
-![select_in.svg](images/edit-nav-idea/555d60a2b734b8619ffec41b7a0a6d36.svg)
+![select_in.svg](/images/edit-nav-idea/555d60a2b734b8619ffec41b7a0a6d36.svg)
 
 ### Project Setting
 
-![project_select.svg](images/edit-nav-idea/f2edbb80243a65e517ddeb17892c98de.svg)
+![project_select.svg](/images/edit-nav-idea/f2edbb80243a65e517ddeb17892c98de.svg)
 
 ### 跳转到 错误处
 
@@ -49,7 +49,7 @@ Command + F3<br />![image.png](images/edit-nav-idea/c08437eaaf664dc8862175ca2f4d
 
 - Command + F12
 
-![image.png](images/edit-nav-idea/7bb7cc0f7dadca531248beecafbb89eb.png)
+![image.png](/images/edit-nav-idea/7bb7cc0f7dadca531248beecafbb89eb.png)
 
 ### 打开 Structure 视图
 
@@ -59,10 +59,10 @@ Command + F3<br />![image.png](images/edit-nav-idea/c08437eaaf664dc8862175ca2f4d
 
 - Command + Option + F12
 
-![image.png](images/edit-nav-idea/ecb1509c01f5528aa521aeee38d04dea.png)
+![image.png](/images/edit-nav-idea/ecb1509c01f5528aa521aeee38d04dea.png)
 
 ### 显示最近的文件
 
 - Commend + E
 
-![image.png](images/edit-nav-idea/6265e7f14b9be9e8fbfbeb3726f88350.png)
+![image.png](/images/edit-nav-idea/6265e7f14b9be9e8fbfbeb3726f88350.png)

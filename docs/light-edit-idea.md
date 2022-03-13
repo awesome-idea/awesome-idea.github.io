@@ -17,6 +17,6 @@ zsh: command not found: idea
 
 > 配置地址：[https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html](https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html)
 
-也可直接利用 Tool Box 生成命令<br />![image.png](images/light-edit-idea/677d803f857f809c8134a308f84f1601.png)<br />生成之后就可以投入使用了
+也可直接利用 Tool Box 生成命令<br />![image.png](/images/light-edit-idea/677d803f857f809c8134a308f84f1601.png)<br />生成之后就可以投入使用了
 
 ###

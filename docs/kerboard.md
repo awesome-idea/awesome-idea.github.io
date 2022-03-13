@@ -2,7 +2,7 @@
 
 能直接快速提升开发效率的方式是什么？<br />答：掌握快捷键，快捷键又或者可以说为 **快捷方式**
 
-![006APoFYly1g1wrlvr84kg30b409stv2.gif](images/kerboard/2f3ce82c13e391cb54c627f6337a3592.gif)
+![006APoFYly1g1wrlvr84kg30b409stv2.gif](/images/kerboard/2f3ce82c13e391cb54c627f6337a3592.gif)
 
 > 子曰：“工欲善其事，必先利其器。居是邦也，事其大夫之贤者，友其士之仁者。”
 
@@ -20,8 +20,8 @@
 
 ### 输出 "Hello World"
 
-正常编码<br />![Kapture 2021-01-06 at 22.25.08.gif](images/kerboard/ea379c81d8c1bfa8dd336cbfdb67946e.25.08.gif)<br />利用 Code Template<br />![sout_helloworld.gif](images/kerboard/f4781082d7e9123faae3c60140be893f.gif)
+正常编码<br />![Kapture 2021-01-06 at 22.25.08.gif](/images/kerboard/ea379c81d8c1bfa8dd336cbfdb67946e.25.08.gif)<br />利用 Code Template<br />![sout_helloworld.gif](/images/kerboard/f4781082d7e9123faae3c60140be893f.gif)
 
 ### 实现接口
 
-正常编码<br />![low_implement_method.gif](images/kerboard/17993c7e8f299e22af089f668acf6af1.gif)<br />使用快捷键<br />![ctrl_i_implement_method.gif](images/kerboard/1b23a75dea91aa7eda4632fc1e2b8201.gif)<br />
+正常编码<br />![low_implement_method.gif](/images/kerboard/17993c7e8f299e22af089f668acf6af1.gif)<br />使用快捷键<br />![ctrl_i_implement_method.gif](/images/kerboard/1b23a75dea91aa7eda4632fc1e2b8201.gif)<br />

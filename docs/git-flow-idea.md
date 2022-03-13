@@ -16,7 +16,7 @@
 
 ## Git 工作流
 
-工作流，我们可以先讲讲为什么会有工作流，可以可先看看一个产品的研发周期是怎样的。<br />![image.png](images/git-flow-idea/c3e22667c41e1d47992397d0732015df.png)<br />上面是一个简化版的流程图，可以看研发部分，我们从评审需求后 介入研发工作，总体来说会经过这几步操作
+工作流，我们可以先讲讲为什么会有工作流，可以可先看看一个产品的研发周期是怎样的。<br />![image.png](/images/git-flow-idea/c3e22667c41e1d47992397d0732015df.png)<br />上面是一个简化版的流程图，可以看研发部分，我们从评审需求后 介入研发工作，总体来说会经过这几步操作
 
 - 方案设计
 - 方案评审
@@ -25,23 +25,23 @@
 - 预发布
 - 上线
 
-![image.png](images/git-flow-idea/dc90980bd70b5422015bd56da98aa938.png)<br />在上图的流程中真正涉及到编码环节的是虚线框中的部分，因为他对应到不同的状态 **开发**，**提测**，**上线，**所以一般在工作中我们也用不同的代码分支进行区分。
+![image.png](/images/git-flow-idea/dc90980bd70b5422015bd56da98aa938.png)<br />在上图的流程中真正涉及到编码环节的是虚线框中的部分，因为他对应到不同的状态 **开发**，**提测**，**上线，**所以一般在工作中我们也用不同的代码分支进行区分。
 
-![image.png](images/git-flow-idea/bfde6283f7e39ec6349db46e3a60ae36.png)<br />上面的分支 语义只供参考，因为每个工资的规定不一样，有的以 master 为上线版本，有的以 release 为上线版本。不过本质差别不是很大。
+![image.png](/images/git-flow-idea/bfde6283f7e39ec6349db46e3a60ae36.png)<br />上面的分支 语义只供参考，因为每个工资的规定不一样，有的以 master 为上线版本，有的以 release 为上线版本。不过本质差别不是很大。
 
 ## 开发产品
 
-下面我们结合产品研发周期 和 git 工作流看看他们怎么进行配合的。<br />![image.png](images/git-flow-idea/f5033f0dedc0c5747945cda566d7e860.png)<br />在完成「需求评审」之后，我们正式进入开发环境，通过对需求进行拆解，我们这次总共新增了 3 个模块，所以我们需要 3 个 功能分支。
+下面我们结合产品研发周期 和 git 工作流看看他们怎么进行配合的。<br />![image.png](/images/git-flow-idea/f5033f0dedc0c5747945cda566d7e860.png)<br />在完成「需求评审」之后，我们正式进入开发环境，通过对需求进行拆解，我们这次总共新增了 3 个模块，所以我们需要 3 个 功能分支。
 
-![image.png](images/git-flow-idea/542c591bcfeb2a360919f0f2d3eead02.png)<br />3 个模块同时进行开发，但是顺序和速度肯定是不相同的，所以我们假定「支付」和「订单」模块提交完成，进入测试阶段，他们讲合并回 develop 分支 通过 develop 分支 签出 relase 分支进行提测。
+![image.png](/images/git-flow-idea/542c591bcfeb2a360919f0f2d3eead02.png)<br />3 个模块同时进行开发，但是顺序和速度肯定是不相同的，所以我们假定「支付」和「订单」模块提交完成，进入测试阶段，他们讲合并回 develop 分支 通过 develop 分支 签出 relase 分支进行提测。
 
 在提测后「测试同学」提出的 Bug 的修复，我们需要在 release 分支上进行。
 
 在测试过程中「消息模块 feature/message」开发完成后我们也是按照相应的步骤合并回 develop 在手动 merge 到现在正在测试的分支
 
-![image.png](images/git-flow-idea/1c464f0e30ee2c9e82a0555abce02160.png)<br />在我们所有的功能分支完成测试后，我们将 release 的变动分别合并到 master 和 develop 分支。
+![image.png](/images/git-flow-idea/1c464f0e30ee2c9e82a0555abce02160.png)<br />在我们所有的功能分支完成测试后，我们将 release 的变动分别合并到 master 和 develop 分支。
 
-![image.png](images/git-flow-idea/71e791ed3c34a3c98c760f93cd61f856.png)<br />上线之后遇到 Bug ，我们将从 master 分支签出 hotfix 分支，进行修改，然后提测环节就跟以前一样，提测完成后分别合并到 develop 和 master 分支。使用 master 分支进行上线。
+![image.png](/images/git-flow-idea/71e791ed3c34a3c98c760f93cd61f856.png)<br />上线之后遇到 Bug ，我们将从 master 分支签出 hotfix 分支，进行修改，然后提测环节就跟以前一样，提测完成后分别合并到 develop 和 master 分支。使用 master 分支进行上线。
 
 ## Git flow
 
@@ -65,11 +65,11 @@
 
 【线上紧急 bug 分支】 - 用来修复线上的紧急 bug，应由 master 拉出，并在修复完成后合并入 master 和 develop 保证两分支的 bug 已修复。
 
-![image.png](images/git-flow-idea/da481897d996d58e177b05d8700ad70f.png)
+![image.png](/images/git-flow-idea/da481897d996d58e177b05d8700ad70f.png)
 
 ## Git Flow in「IntelliJ IDEA」
 
-在「IntelliJ IDEA」中使用 Git Flow 我们主要是依赖一个插件.<br />![image.png](images/git-flow-idea/8dcca5ed4d2d6b8769b70cd3a3d500e5.png)<br />安装插件之后需要重启「IntelliJ IDEA」 生效
+在「IntelliJ IDEA」中使用 Git Flow 我们主要是依赖一个插件.<br />![image.png](/images/git-flow-idea/8dcca5ed4d2d6b8769b70cd3a3d500e5.png)<br />安装插件之后需要重启「IntelliJ IDEA」 生效
 
 [https://plugins.jetbrains.com/plugin/7315-git-flow-integration](https://plugins.jetbrains.com/plugin/7315-git-flow-integration)
 
@@ -78,4 +78,4 @@
 > 这是我是用「IntelliJ IDEA」的第五年，因为自己比较热爱去探索一些可以减少繁琐工作的方法，所以对「IntelliJ IDEA」 了解的会稍微多一些，工作 自己也经常会整理一些文档，但是因为自己总体来说比较懒散，所以一直没有将整理的文章完成的梳理。
 >
 > 所以今年我自己搭建了这个公众号给自己定了 工作日 每天早上 9 点分享技巧，原生程序员写作 肯定会有写的不好 或者逻辑不同的地方，如果你有任何意见或者你有建议欢迎添加我的微信一起讨论。
-> ![image.png](images/git-flow-idea/29a4c42754e328e2cb5c9016b4edd616.png)
+> ![image.png](/images/git-flow-idea/29a4c42754e328e2cb5c9016b4edd616.png)

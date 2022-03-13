@@ -5,4 +5,4 @@ IntelliJ IDEA 为特定的使用模式提供了特殊的查看模式。例如，
 - **Zen** 在禅宗模式下，IntelliJ IDEA 结合了全屏模式和无干扰模式，因此主窗口会展开，只留下编辑器和源代码供您专注于编程。
 - **Presentation mode** 在演示模式下，IntelliJ IDEA 扩展编辑器以占据整个屏幕，并增加字体大小，以便让您的观众更容易看到您在做什么。UI 的其他元素是隐藏的，但是您可以使用相应的快捷方式或使用主菜单（如果您将鼠标指针悬停在屏幕顶部）来显示它们。
 
-![ide-viewing-modes-quick-swticher-20201209005534845.png](images/show-model-idea/e4a1b6c2ae35ff2b60e242a53281ef04.png)<br />快速切换 显示模式
+![ide-viewing-modes-quick-swticher-20201209005534845.png](/images/show-model-idea/e4a1b6c2ae35ff2b60e242a53281ef04.png)<br />快速切换 显示模式

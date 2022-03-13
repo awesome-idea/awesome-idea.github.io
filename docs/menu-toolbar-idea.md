@@ -8,17 +8,17 @@
 
 > Setting | Appearance & Behavior | Menus and Toolbars
 
-![settings_menus_toolbars.png](images/menu-toolbar-idea/874ba791d5a74c8ec4d9639be9763360.png)
+![settings_menus_toolbars.png](/images/menu-toolbar-idea/874ba791d5a74c8ec4d9639be9763360.png)
 
 在可用的菜单和工具栏列表中，展开要自定义的节点并选择所需的项。
 
-- 单击![](images/menu-toolbar-idea/db14e222bcd7467f8e0953e53a774a3c.svg)此处可在选定项下添加操作或分隔符。
-- 单击![](images/menu-toolbar-idea/96f53378f24f4e07196a2aad62a32426.svg)此处可删除所选项。
-- 单击![](images/menu-toolbar-idea/469114b8a1aa2b119fecf757e51825c1.svg)此处可添加或更改所选操作的图标。您只能使用 PNG 或 SVG 文件作为图标。
-- 单击![](images/menu-toolbar-idea/bc3658518789add11983c3a83c92d405.svg) 或![](images/menu-toolbar-idea/0feb172fc7c5b0efb77de58a23202e6b.svg) 上移或下移所选项目。
-- 单击![](images/menu-toolbar-idea/9f98033314bf2b93f0b709d25fc8caac.svg)此处可将选定的操作或所有操作还原为默认设置。
+- 单击![](/images/menu-toolbar-idea/db14e222bcd7467f8e0953e53a774a3c.svg)此处可在选定项下添加操作或分隔符。
+- 单击![](/images/menu-toolbar-idea/96f53378f24f4e07196a2aad62a32426.svg)此处可删除所选项。
+- 单击![](/images/menu-toolbar-idea/469114b8a1aa2b119fecf757e51825c1.svg)此处可添加或更改所选操作的图标。您只能使用 PNG 或 SVG 文件作为图标。
+- 单击![](/images/menu-toolbar-idea/bc3658518789add11983c3a83c92d405.svg) 或![](/images/menu-toolbar-idea/0feb172fc7c5b0efb77de58a23202e6b.svg) 上移或下移所选项目。
+- 单击![](/images/menu-toolbar-idea/9f98033314bf2b93f0b709d25fc8caac.svg)此处可将选定的操作或所有操作还原为默认设置。
 
-![](images/menu-toolbar-idea/5102d517bbcac22971e94a3e42ec6451.png)
+![](/images/menu-toolbar-idea/5102d517bbcac22971e94a3e42ec6451.png)
 
 ## Quick List
 
@@ -29,29 +29,29 @@
 > Windows: Ctrl + Alt + T
 > Mac：⌃ T
 
-![](images/menu-toolbar-idea/87e2174f28741776ebfa9844f80f7d02.png)
+![](/images/menu-toolbar-idea/87e2174f28741776ebfa9844f80f7d02.png)
 
 **VCS**
 
 > Windows: Alt + `
 > MAC：Ctrl + V
 
-![image.png](images/menu-toolbar-idea/1f5f6017568700ba92f6d226a131655c.png)
+![image.png](/images/menu-toolbar-idea/1f5f6017568700ba92f6d226a131655c.png)
 
 **Select In**
 
 > Windows: Alt + F1
 > Mac:
 
-![image.png](images/menu-toolbar-idea/46f79b1165f83df04f94630057bff21e.png)
+![image.png](/images/menu-toolbar-idea/46f79b1165f83df04f94630057bff21e.png)
 
 **Switch**
 
 > Windows: Ctrl + `
 > Mac:
 
-![image.png](images/menu-toolbar-idea/f16942a640ec56e87d4cef675b2b1cf4.png)
+![image.png](/images/menu-toolbar-idea/f16942a640ec56e87d4cef675b2b1cf4.png)
 
 上方所提到的快捷键都是对日常开发中极大提升开发效率，建议熟读并背诵
 
-![](images/menu-toolbar-idea/48944a771d9a62aaccea1e6a9e9e88fd.png)
+![](/images/menu-toolbar-idea/48944a771d9a62aaccea1e6a9e9e88fd.png)

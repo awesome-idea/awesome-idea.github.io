@@ -2,21 +2,21 @@
 
 当你引入一个新的类时，如果 IDE 没有引入该类，那么 IDE 会显示一个弹出窗口，建议您添加缺少的 import 语句，这样就不必手动添加。<br />按 Option + Enter 大家建议列表
 
-![](images/auto-import-idea/cc9f2308ded413181b31edb3251b9690.png)
+![](/images/auto-import-idea/cc9f2308ded413181b31edb3251b9690.png)
 
 要更改导入弹出窗口的背景颜色，请按 Ctrl+Alt+S 并转至 Editor | 配色方案| 一般| 弹出窗口和提示| 问题提示 。
 
 ## 自动添加导入语句
 
-![image.png](images/auto-import-idea/05c21d40574a394b8196ba9c6b90f946.png)
+![image.png](/images/auto-import-idea/05c21d40574a394b8196ba9c6b90f946.png)
 
 ## 禁用导入弹出窗口
 
-禁用弹出窗口时，未解析的引用带有下划线并标记有红色灯泡图标![](images/auto-import-idea/cc6c6c4a36e52acdacef4fd4832e2c7e.svg)。要查看建议列表，请单击此图标（或按 Alt+Enter），然后选择 Import class。
+禁用弹出窗口时，未解析的引用带有下划线并标记有红色灯泡图标![](/images/auto-import-idea/cc6c6c4a36e52acdacef4fd4832e2c7e.svg)。要查看建议列表，请单击此图标（或按 Alt+Enter），然后选择 Import class。
 
 ### 禁用所有弹出窗口
 
-- 将鼠标悬停在编辑器右上角的检查窗口小部件上，单击 ![](images/auto-import-idea/00d6cca386e67c1c83b4e07ab051a2d6.svg)，然后禁用“显示自动导入工具提示”选项。<br />![](images/auto-import-idea/b27eb00143e051197b9ff7234c90b1fd.png)
+- 将鼠标悬停在编辑器右上角的检查窗口小部件上，单击 ![](/images/auto-import-idea/00d6cca386e67c1c83b4e07ab051a2d6.svg)，然后禁用“显示自动导入工具提示”选项。<br />![](/images/auto-import-idea/b27eb00143e051197b9ff7234c90b1fd.png)
 
 ### 禁用类或静态方法和字段的弹出窗口
 
@@ -34,7 +34,7 @@ IntelliJ IDEA 建议默认情况下导入单个类。您可以更改设置以导
 
 当 IntelliJ IDEA 从同一包中导入的类的数量达到限制（`5`默认情况下）时，IDE 会修改语句以导入整个包，而不是从此包中导入多个单个类：
 
-![](images/auto-import-idea/f052c5fd175d906c1a870181470ae008.png)
+![](/images/auto-import-idea/f052c5fd175d906c1a870181470ae008.png)
 
 ### 禁用通配符导入以始终导入单个类
 
@@ -42,14 +42,14 @@ IntelliJ IDEA 建议默认情况下导入单个类。您可以更改设置以导
 1. 确保已启用“使用单个类导入”选项。
 1. 在类计数采用进口与“_”和 名计数使用带有“_”静态导入区域，指定那绝对超过一类的课程包中的数量和名称的数值（例如，`999`）。
 
-要将导入语句替换为文件中的单个类导入而不更改设置，请将插入符号放在导入语句中，按 Alt+Enter （或使用意图操作![](images/auto-import-idea/683c8f96584dc026a2dd39e60094203d.svg)图标），然后选择“替换为单个类导入”。
+要将导入语句替换为文件中的单个类导入而不更改设置，请将插入符号放在导入语句中，按 Alt+Enter （或使用意图操作![](/images/auto-import-idea/683c8f96584dc026a2dd39e60094203d.svg)图标），然后选择“替换为单个类导入”。
 
 ## 从自动导入中排除类和包
 
 导入建议列表可能包括不需要的类和软件包。您可以从自动导入中排除多余的条目，以便建议列表仅包含相关项目。
 
 1. 在“设置/首选项”对话框中 Ctrl+Alt+S ，单击“ 编辑器”。自动导入 。
-1. 在“从自动导入和完成中排除”部分中，单击![](images/auto-import-idea/46e3abb0be1caac01d460c2e2f70bed9.svg) Alt+Insert，然后指定要排除的类或程序包。<br />您还可以选择是要从当前项目中还是从所有项目（全局）中排除项目。
+1. 在“从自动导入和完成中排除”部分中，单击![](/images/auto-import-idea/46e3abb0be1caac01d460c2e2f70bed9.svg) Alt+Insert，然后指定要排除的类或程序包。<br />您还可以选择是要从当前项目中还是从所有项目（全局）中排除项目。
 
 ### 即时排除课程或课程包
 
@@ -71,17 +71,17 @@ IntelliJ IDEA 建议默认情况下导入单个类。您可以更改设置以导
 
 ### 在单个文件中优化导入
 
-1. 将插入符号放在导入语句中，然后按 Alt+Enter 或使用 ![](images/auto-import-idea/9d142efe477950e26f1cf92a41ab803c.svg)图标。
+1. 将插入符号放在导入语句中，然后按 Alt+Enter 或使用 ![](/images/auto-import-idea/9d142efe477950e26f1cf92a41ab803c.svg)图标。
 1. 选择优化导入。
 
-![](images/auto-import-idea/c87e9030c0ab9f7075388a1b516e8ae4.png)
+![](/images/auto-import-idea/c87e9030c0ab9f7075388a1b516e8ae4.png)
 
 ### 自动优化修改文件中的导入
 
 如果您的项目处于版本控制下，则可以指示 IntelliJ IDEA 在将已修改文件提交到 VCS 之前对其进行优化。
 
 1. 从主菜单中，选择 VCS |。提交 （或按 Ctrl+K）。
-1. 单击，![](images/auto-import-idea/9d424a855aa0ec60e27f0311f151275c.svg) 然后在“提交之前”区域中，选择“优化导入”复选框。
+1. 单击，![](/images/auto-import-idea/9d424a855aa0ec60e27f0311f151275c.svg) 然后在“提交之前”区域中，选择“优化导入”复选框。
 
 ### 即时优化进口
 

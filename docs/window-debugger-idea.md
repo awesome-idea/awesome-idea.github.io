@@ -1,10 +1,10 @@
-默认情况下，当您的程序遇到断点时，“**调试**工具”窗口将打开，而在会话终止时则不会隐藏。要更改此行为，请清除 “**构建，执行，部署” |“**在断点上**显示调试窗口在断点上”**复选框。**设置/首选项的 **调试器\*\*页面。<br />![](images/window-debugger-idea/02d76adef142ba414663f04f4e29c241.png)
+默认情况下，当您的程序遇到断点时，“**调试**工具”窗口将打开，而在会话终止时则不会隐藏。要更改此行为，请清除 “**构建，执行，部署” |“**在断点上**显示调试窗口在断点上”**复选框。**设置/首选项的 **调试器\*\*页面。<br />![](/images/window-debugger-idea/02d76adef142ba414663f04f4e29c241.png)
 
 ##
 
 ## 会话
 
-可用的调试会话在“调试工具”窗口的顶部被分隔为选项卡。<br />![](images/window-debugger-idea/94e271fec9ec4c62de32f134e741df23.png)<br />如果为特定的运行/调试配置启用“服务”窗口，则在调试这些配置时，“调试”窗口的整个视图将显示在“服务”窗口中。<br />所选会话选项卡将显示所有信息，如内联变量值和执行点。如果要并行运行多个使用相同类的调试会话，则这一点很重要。<br />![](images/window-debugger-idea/ac0bcc43bacffdbcd3fb8e9b1dd1bbca.png)
+可用的调试会话在“调试工具”窗口的顶部被分隔为选项卡。<br />![](/images/window-debugger-idea/94e271fec9ec4c62de32f134e741df23.png)<br />如果为特定的运行/调试配置启用“服务”窗口，则在调试这些配置时，“调试”窗口的整个视图将显示在“服务”窗口中。<br />所选会话选项卡将显示所有信息，如内联变量值和执行点。如果要并行运行多个使用相同类的调试会话，则这一点很重要。<br />![](/images/window-debugger-idea/ac0bcc43bacffdbcd3fb8e9b1dd1bbca.png)
 
 ## 标签
 
@@ -22,12 +22,12 @@
 
 ### 显示/隐藏标签
 
-![](images/window-debugger-idea/31dbfb9ac294d5994d23e7db9dcd11e2.png)
+![](/images/window-debugger-idea/31dbfb9ac294d5994d23e7db9dcd11e2.png)
 
 ### 移动标签
 
-![](images/window-debugger-idea/79d83dd0ae28f17717a49ce66c61ff13.png)
+![](/images/window-debugger-idea/79d83dd0ae28f17717a49ce66c61ff13.png)
 
 ### 恢复默认布局
 
-![](images/window-debugger-idea/2a0bb9f2a99b7de17147d4d816f74228.png)
+![](/images/window-debugger-idea/2a0bb9f2a99b7de17147d4d816f74228.png)

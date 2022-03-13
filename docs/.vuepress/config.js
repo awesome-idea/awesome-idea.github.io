@@ -91,10 +91,6 @@ function getGuideSidebar() {
           text: "快捷键对比",
         },
         { link: "/multiple-pointer-idea-v1", text: "多光标配置" },
-        {
-          link: "/202003-version-update-idea",
-          text: "202003-version-update-idea",
-        },
       ],
     },
   ];
