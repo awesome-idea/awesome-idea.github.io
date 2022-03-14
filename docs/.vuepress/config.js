@@ -32,6 +32,12 @@ module.exports = {
       },
     ],
     ["@vuepress/plugin-palette", { preset: "sass" }],
+      [
+      '@vuepress/plugin-google-analytics',
+      {
+        id: 'G-MRGHD5LXNK',
+      },
+    ],
   ],
 };
 
