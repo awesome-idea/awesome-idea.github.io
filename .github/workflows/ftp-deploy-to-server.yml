@@ -7,8 +7,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Set Node ENV
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - run: npm install
-      - run: npm build
+      - run: npm run build
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
