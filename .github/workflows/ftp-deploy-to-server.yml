@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm build
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
@@ -14,5 +16,5 @@ jobs:
           server: ${{ secrets.HOSTNAME }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './docs/*'
-          remote_path: '/root/www/toptips'
+          remote_path: '/var/www/app'
           args: '-o ConnectTimeout=5'
