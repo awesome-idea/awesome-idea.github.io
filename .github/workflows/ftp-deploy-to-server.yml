@@ -1,18 +1,18 @@
-on: push
-name: 🚀 Deploy website on push
+on: [push]
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy_job:
     runs-on: ubuntu-latest
+    name: deploy
     steps:
       - name: Checkout
-        uses: actions/checkout@master
-
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: actions/checkout@v2
+      - name: deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
-          local-dir: docs/
-          server-dir: /www/toptips/
-          server: ${{ secrets.HOSTNAME }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          server: '${{ secrets.HOSTNAME }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
+          local_path: './docs/*'
+          remote_path: 'www/toptips'
+          args: '-o ConnectTimeout=5'
