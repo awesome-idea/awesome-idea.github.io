@@ -11,7 +11,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          local-dir: ./dist/
+          local-dir: dist/
           server-dir: /www/toptips/
           server: ${{ secrets.HOSTNAME }}
           username: ${{ secrets.USERNAME }}
