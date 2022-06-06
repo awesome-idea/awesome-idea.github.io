@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run: npm ci
+      - run: npm install
       - run: npm build
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
