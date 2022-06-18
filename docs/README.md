@@ -7,7 +7,7 @@ actions:
   - text: 日更
     link: /awesome/
     type: primary
-  - text: 离线插件包
+  - text: 离线插件包11
     link: /plugins/
     type: secondary
 features:
