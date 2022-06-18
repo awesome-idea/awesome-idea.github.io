@@ -1,0 +1,1 @@
+const e={key:"v-e7abf15a",path:"/awesome/debugger.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1655572531e3,contributors:[{name:"awesome-idea",email:"100367819+awesome-idea@users.noreply.github.com",commits:1}]},filePathRelative:"awesome/debugger.md"};export{e as data};

@@ -1,0 +1,1 @@
+import{o as e,c as a,a as r}from"./app.ed200db8.js";import{_ as c}from"./plugin-vue_export-helper.21dcd24c.js";var o="/images/pre/5c35bc7a0a54503bc53da864236ac101.svg";const s={},t=r("img",{src:o,alt:"keyboard.svg"},null,-1),_=[t];function n(l,m){return e(),a("p",null,_)}var d=c(s,[["render",n]]);export{d as default};
