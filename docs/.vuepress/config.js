@@ -1,24 +1,21 @@
+const sidebar = require('./sidebar');
+
 module.exports = {
   // 站点配置
   base: "/",
   lang: "zh-CN",
-  title: "太棒了 IDEA",
-  description: "用最简单的方式讲述 [IntelliJ IDEA] 的技巧",
-
-  open: true,
+  title: "🥇Top tips",
+  description: "👇",
   docsDir: "docs",
   // 主题和它的配置
   theme: "@vuepress/theme-default",
   themeConfig: {
-    logo: "images/logo.png",
     navbar: [
       { text: "首页", link: "/" },
       { text: "日更", link: "/awesome/" },
       { text: "插件", link: "/plugins/" },
     ],
-    sidebar: {
-      "/awesome/": getGuideSidebar(),
-    },
+    sidebar: sidebar,
   },
   plugins: [
     [
@@ -31,6 +28,7 @@ module.exports = {
         },
       },
     ],
+    ["vuepress-plugin-auto-sidebar", {}]
   ],
 };
 
