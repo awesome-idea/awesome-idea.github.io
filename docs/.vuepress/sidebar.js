@@ -71,6 +71,18 @@ module.exports = {
       ]
     }
   ],
+  "/g/": [
+    {
+      "text": "G",
+      "title": "G",
+      "collapsable": false,
+      "sidebarDepth": 1,
+      "children": [
+        "README.md",
+        "awesome-sites.md"
+      ]
+    }
+  ],
   "/plugins/": [
     {
       "text": "Plugins",
