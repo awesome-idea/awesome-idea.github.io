@@ -79,7 +79,9 @@ module.exports = {
       "sidebarDepth": 1,
       "children": [
         "README.md",
-        "awesome-sites.md"
+        "awesome-sites.md",
+        "express.md",
+        "pg.md"
       ]
     }
   ],
