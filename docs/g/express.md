@@ -2,7 +2,7 @@
 
 ## 01
 
-说来惭愧，自己从 18 年刚刚参加工作时接触的第一个 Node.js 框架就是 Express，后面慢慢用了 Koa2，Egg.js，Nest.js，但是基本上都停留在使用层面，从来没有想要过探索源码。大部分情况都是 CRUD，慢慢工作了4 年了，确实是感觉，还这样下去不行。所以还是想着慢慢的学习源码。慢慢对自己 Node 基础缺失部分进行查漏补缺。
+说来惭愧，自己从 18 年刚刚参加工作时接触的第一个 Node.js 框架就是 Express，后面慢慢用了 Koa2，Egg.js，Nest.js，但是基本上都停留在使用层面，从来没有想要过探索源码。大部分情况都是 CRUD，慢慢工作了 4 年了，确实是感觉，还这样下去不行。所以还是想着慢慢的学习源码。慢慢对自己 Node 基础缺失部分进行查漏补缺。
 
 ## 02
 
@@ -35,8 +35,6 @@ git clone https://github.com/expressjs/express
 
 我们主要关注的是 lib 文件夹下的文件，这里面基本上就是 express 的所有最核心的代码了。
 
-
-
 ## 03
 
 其实第一时间看到这源码的时候。
@@ -46,8 +44,6 @@ git clone https://github.com/expressjs/express
 **上面是我的第一直觉，就是觉得还是比较简单的。**:smiling_imp::smiling_imp::smiling_imp:
 
 > 后面事实证明，我自己还是太年轻了。
-
-
 
 ## 04
 
@@ -120,14 +116,9 @@ git clone https://github.com/expressjs/express
 ```js
 // index.js
 
-'use strict';
+'use strict'
 
-module.exports = require('./lib/express');
-
+module.exports = require('./lib/express')
 ```
 
-从外层的 index.js 可以看出，后面入口为 lib 下的 express 文件
-
-
-
-## 总结
+从外层的 index.js 可以看出，后面入口为 lib 下的 express.js 文件为主要入口

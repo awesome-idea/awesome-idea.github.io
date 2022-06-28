@@ -1,32 +1,32 @@
-const sidebar = require('./sidebar');
+const sidebar = require('./sidebar')
 
 module.exports = {
   // 站点配置
-  base: "/",
-  lang: "zh-CN",
-  title: "🥇Top tips",
-  description: "👇",
-  docsDir: "docs",
+  base: '/',
+  lang: 'zh-CN',
+  title: '🥇Top tips',
+  description: '👇',
+  docsDir: 'docs',
   // 主题和它的配置
-  theme: "@vuepress/theme-default",
+  theme: '@vuepress/theme-default',
   themeConfig: {
     navbar: [
-      { text: "🛌", link: "/" },
-      { text: "🗑", link: "/g/" },
+      { text: '🛌', link: '/' },
+      { text: '🗑', link: '/g/' },
     ],
     sidebar: sidebar,
   },
   plugins: [
     [
-      "@vuepress/plugin-search",
+      '@vuepress/plugin-search',
       {
         locales: {
-          "/": {
-            placeholder: "Search",
+          '/': {
+            placeholder: 'Search',
           },
         },
       },
     ],
-    ["vuepress-plugin-auto-sidebar", {}]
+    // ["vuepress-plugin-auto-sidebar", {}]
   ],
-};
+}

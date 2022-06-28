@@ -80,8 +80,10 @@ module.exports = {
       "children": [
         "README.md",
         "awesome-sites.md",
+        "code-demo.md",
         "express.md",
-        "pg.md"
+        "pg.md",
+        "pg_explain.md"
       ]
     }
   ],
