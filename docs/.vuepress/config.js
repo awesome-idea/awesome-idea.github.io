@@ -6,6 +6,7 @@ module.exports = {
   lang: 'zh-CN',
   title: '🥇Top tips',
   description: '👇',
+  head: [['link', { rel: 'shortcut icon', href: '/images/favicon.icon' }]],
   docsDir: 'docs',
   // 主题和它的配置
   theme: '@vuepress/theme-default',
@@ -13,6 +14,7 @@ module.exports = {
     navbar: [
       { text: '🛌', link: '/' },
       { text: '🗑', link: '/g/' },
+      { text: '👀', link: '/idea/' },
     ],
     sidebar: sidebar,
   },
