@@ -1,20 +1,12 @@
-# Express 源码分析
+# T
 
-## 01
+### 01.背景
 
 说来惭愧，自己从 18 年刚刚参加工作时接触的第一个 Node.js 框架就是 Express，后面慢慢用了 Koa2，Egg.js，Nest.js，但是基本上都停留在使用层面，从来没有想要过探索源码。大部分情况都是 CRUD，慢慢工作了 4 年了，确实是感觉，还这样下去不行。所以还是想着慢慢的学习源码。慢慢对自己 Node 基础缺失部分进行查漏补缺。
 
-## 02
 
-首先把 [Express](https://github.com/expressjs/express) clone 一下
 
-```shell
-git clone https://github.com/expressjs/express
-```
-
-在阅读源码之前最好是对代码有一个整体的认识会好一点。知道整体的结构会有利于我们从整理进行书写。
-
-```shell
+```sh
 .
 ├── application.js
 ├── express.js
@@ -33,92 +25,80 @@ git clone https://github.com/expressjs/express
 2 directories, 11 files
 ```
 
-我们主要关注的是 lib 文件夹下的文件，这里面基本上就是 express 的所有最核心的代码了。
+如果你尝试拉取过源码你就会知道，其实 Express 的源码其实非常的少，很容易给你一种源码很简单的错觉。
 
-## 03
+> 至少最开始我自己看到的时候 觉得他很简单。
 
-其实第一时间看到这源码的时候。
 
-卧槽，这是不是有点太简洁了，属实有点不可思议，毕竟我记得我最开始看 Spring 源码的时候，那大大的源码，属实有点难理解。「**现在也没理解到**」
 
-**上面是我的第一直觉，就是觉得还是比较简单的。**:smiling_imp::smiling_imp::smiling_imp:
+ 所以我自己还是以学习优秀文章为主，如果硬要自己看 理解。可能会花不少时间。我自己主要学习的一篇文章是
 
-> 后面事实证明，我自己还是太年轻了。
+- [Express 源码阅读](https://segmentfault.com/a/1190000011090124) 
 
-## 04
+这篇文章和市面上的文章角度不一样，从正常的角度一步一步的实现一个 Express，在这种过程中你会慢慢理解 Express 的构建过程。
 
-一般来说开一个开源项目，刚开始的时候可以先看一下它的 pacakge.json 这样可以最快速的了解项目有哪些依赖
 
-```json
-{
-  "name": "express",
-  "version": "4.18.1",
-  "dependencies": {
-    "accepts": "~1.3.8",
-    "array-flatten": "1.1.1",
-    "body-parser": "1.20.0",
-    "content-disposition": "0.5.4",
-    "content-type": "~1.0.4",
-    "cookie": "0.5.0",
-    "cookie-signature": "1.0.6",
-    "debug": "2.6.9",
-    "depd": "2.0.0",
-    "encodeurl": "~1.0.2",
-    "escape-html": "~1.0.3",
-    "etag": "~1.8.1",
-    "finalhandler": "1.2.0",
-    "fresh": "0.5.2",
-    "http-errors": "2.0.0",
-    "merge-descriptors": "1.0.1",
-    "methods": "~1.1.2",
-    "on-finished": "2.4.1",
-    "parseurl": "~1.3.3",
-    "path-to-regexp": "0.1.7",
-    "proxy-addr": "~2.0.7",
-    "qs": "6.10.3",
-    "range-parser": "~1.2.1",
-    "safe-buffer": "5.2.1",
-    "send": "0.18.0",
-    "serve-static": "1.15.0",
-    "setprototypeof": "1.2.0",
-    "statuses": "2.0.1",
-    "type-is": "~1.6.18",
-    "utils-merge": "1.0.1",
-    "vary": "~1.1.2"
-  },
-  "devDependencies": {
-    "after": "0.8.2",
-    "connect-redis": "3.4.2",
-    "cookie-parser": "1.4.6",
-    "cookie-session": "2.0.0",
-    "ejs": "3.1.8",
-    "eslint": "7.32.0",
-    "express-session": "1.17.2",
-    "hbs": "4.2.0",
-    "marked": "0.7.0",
-    "method-override": "3.0.0",
-    "mocha": "10.0.0",
-    "morgan": "1.10.0",
-    "multiparty": "4.2.3",
-    "nyc": "15.1.0",
-    "pbkdf2-password": "1.2.1",
-    "supertest": "6.2.3",
-    "vhost": "~3.0.2"
-  },
-  "engines": {
-    "node": ">= 0.10.0"
-  }
-}
-```
 
-先把依赖放在上面，后面遇到了在详细看。
+至于其他的文章，大多都是一上来就开始总结，Express 有几个组成部分，可能还是我自己比较愚钝。不是很能理解到。本文也是基于[Express 源码阅读](https://segmentfault.com/a/1190000011090124) 的总结，加入一些我自己的理解。
+
+
+
+### 02. 一个最简单的 Node 服务
+
+我个人人为想要理解 Express 中运行原理非常重要的一步就是 理解 Node 如果创建一个 HTTP Server。
+毕竟 Express 也就是在 Node Server 的基础之上做扩展。通过一些封装，让官方的 Server 变得更加的好用。
+
+![image-20220701100024514](../.vuepress/images/express/image-20220701100024514.png)
+
+ 在 Node 官网 HTTP 模块下有一个代码例子，通过几行代码就可以创建一个 Server
 
 ```js
-// index.js
+const http = require('http');
 
-'use strict'
+// Create a local server to receive data from
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({
+    data: 'Hello World!'
+  }));
+});
 
-module.exports = require('./lib/express')
+server.listen(8000);
 ```
 
-从外层的 index.js 可以看出，后面入口为 lib 下的 express.js 文件为主要入口
+![image-20220701100321343](../.vuepress/images/express/image-20220701100321343.png)
+
+通过 `node testServer.js` 运行 js 文件。
+
+
+
+![image-20220701100356203](../.vuepress/images/express/image-20220701100356203.png)
+
+直接访问 8000 端口。就可以得到我们指定的信息了。
+
+
+
+
+
+#### 03. 小小的拆分一下请求流程
+
+![image-20220701101250929](../.vuepress/images/express/image-20220701101250929.png)
+官方提供的 Server Demo 算是提供一个非常基本的 Server，可以接受请求和响应. 
+
+接下来我们尝试对其进行改造，完成一些我们的需求。在改造之前我们先看一下 Node 的官方文档，关于这里的 req，和 res 的描述。
+
+![image-20220701103808802](../.vuepress/images/express/image-20220701103808802.png)
+
+通过文档我们可以知道 req 对象对应的是 IncomingMessage，res 对应的为 ServerResponse。
+
+
+
+通过我们平常使用框架的经验，我们需要知道以下问题。
+
+- HTTP 请求是分类型的，分别由 GET POST UPDATE PATCH DELETE OPTION ...
+- 请求参数分为 url params, path params, content body
+- 如何做 JWT 认证，好像是放在 Header 头里面的
+- 服务器可以上传文件，也可以下载文件。
+- Cookie Session 如何处理
+- What is SSR?
+- 中间件如何实现
