@@ -80,10 +80,14 @@ module.exports = {
       "children": [
         "README.md",
         "awesome-sites.md",
-        "code-demo.md",
+        "candy_machine_v2.md",
         "express.md",
+        "mongodb-sql-mapping.md",
+        "mongodb-summary.md",
+        "nestjs.md",
         "pg.md",
-        "pg_explain.md"
+        "pg_explain.md",
+        "solidity.md"
       ]
     }
   ],
